@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.topbar {
+  background-color: #7b2382;
+  color: #fff;
+  text-align: left;
+  height: 40px;
+  width: 100%;
+  padding: 5px 50px;
+  z-index: 400;
+  position: relative;
+  top: 0;
+}
+.topbar i {
+  margin-right: 20px;
+}
+.topbar a {
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background-color: rgba(255, 255, 255, 0.815);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  z-index: 30;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.23);
+}
+/* .navbar .logo */
+.navbar .logo img {
+  width: 50px;
+  height: auto;
+}
+.navbar .links li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.navbar .links li a {
+  color: #000 !important;
+  text-decoration: none;
+}
+.navbar .links li a:hover {
+  color: blue !important;
+}
+
+/* showcase */
+.showcase {
+  height: 100vh;
+  overflow: hidden;
+}
+.showcase .video-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.showcase .overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.showcase .reservation-box {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  padding: 20px 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.705);
+  top: 32%;
+  right: 6%;
+  z-index: 50;
+}
+.showcase .reservation-box h1 {
+  color: #7b2382;
+  font-weight: normal;
+}
+.showcase .reservation-box h1 span {
+  font-weight: bold;
+}
+.showcase .reservation-box .box {
+  width: 100%;
+  padding: 10px 20px;
+  border-color: #7b2382;
+  outline: none;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.showcase .reservation-box .btn {
+  background-color: #7b2382;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+}
+.showcase .reservation-box .rate {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Start rooms */
+.offers {
+  padding: 30px;
+}
+.offers h1 {
+  color: #7b2382;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.offers .subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.offers .rooms {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offers .rooms .room-box {
+  text-align: center;
+  margin-bottom: 60px;
+  /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #333;
+  transition: all 0.3s;
+}
+.offers .rooms .room-box:hover {
+  background-color: #eee;
+}
+.offers .rooms img {
+  width: 500px;
+  transition: all 0.3s;
+}
+.offers .rooms img:hover {
+  transform: scale(0.9);
+}
+.offers .rooms .btn {
+  margin: 60px auto;
+  margin-bottom: -18px;
+}
+
+/* About */
+.about {
+  margin-top: 60px;
+}
+.about h1 {
+  color: #7b2382;
+}
+.about .about-box {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  border: #7b2382 solid 1px;
+  position: relative;
+}
+.about .about-box img {
+  width: 100%;
+  height: auto;
+}
+.about .about-box:hover .text {
+  background-color: rgba(255, 255, 255, 0.925);
+}
+.about .about-box .text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.705);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding: 0 20px 0 0;
+  transition: all 0.3s;
+}
+.about .about-box .text p {
+  width: 80%;
+  line-height: 1.5;
+}
+.about .about-box .text .btn {
+  width: 200px;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+/* upper footer */
+.upper-footer {
+  background-color: #7b2382;
+  color: #fff;
+  height: 400px;
+  padding: 40px 0;
+}
+.upper-footer .border-col {
+  border-left: 1px solid #fff;
+}
+.upper-footer h2 {
+  margin-bottom: 20px;
+}
+.upper-footer p {
+  line-height: 1.8;
+}
+.upper-footer i {
+  color: #fff;
+}
+.upper-footer i.ws {
+  margin-right: 10px;
+}
+.upper-footer i.ws a:hover {
+  counter-reset: green;
+}
+.upper-footer .icons {
+  margin-top: 30px;
+}
+.upper-footer .icons i {
+  margin-left: 10px;
+  border: 1px solid #fff;
+  padding: 7px 0;
+  width: 30px;
+  text-align: center;
+}
+.upper-footer .icons i:hover {
+  background-color: #fff;
+  color: #7b2382;
+}
+
+/* footer */
+footer {
+  height: 50px;
+  padding: 10px;
+}
+
+/* About Page */
+.about-page {
+  margin-top: -200px;
+}
+.about-page img.cover {
+  width: 100%;
+  height: 600px;
+}
+.about-page .content,
+.contact-page .content {
+  margin: 70px 0;
+}
+.about-page .content h2 {
+  color: #7b2382;
+  text-align: center;
+}
+.about-page .content h2 span {
+  font-weight: bold;
+}
+.about-page .content .name {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* contact page */
+.contact-page {
+  margin-top: 200px;
+}
+.contact-page h1 {
+  color: #7b2382;
+  text-align: center;
+}
+.contact-page .content p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.contact-page .content i.ws {
+  margin-right: 20px;
+  color: #7b2382;
+  border: 1px solid #7b2382;
+  padding: 5px;
+}
+.contact-page .content i.ws:hover {
+  background-color: #000;
+  color: #fff;
+}
+.contact-page .content ul {
+  list-style: disc;
+  margin-right: 30px;
+}
+.contact-page .content ul li {
+  margin-bottom: 10px;
+}
+.contact-page .content ul li a:hover {
+  color: #7b2382;
+  text-decoration: none;
+}
+
+/* The line shape */
+.shape {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #7b2382;
+  margin: 10px auto 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shape:before,
+.shape:after {
+  content: "";
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  background-color: #7b2382;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.shape:before {
+  width: 200px;
+  margin-top: -2px;
+}
+.shape:after {
+  width: 250px;
+  margin-top: 2px;
+}
+.shape span {
+  display: block;
+  background-color: #fff;
+  border: 3px solid #7b2382;
+  z-index: 1;
+  width: 84%;
+  height: 84%;
+}
+.btn {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #7b2382;
+  border-radius: 20px;
+  background-color: #7b2382;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .offers .rooms {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #fff;
+    z-index: 100;
+  }
+  .about .about-box:hover .text {
+    background-color: #fff;
+  }
+  .about .about-box .text {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: block;
+    text-align: right;
+    padding: 30px 20px 0 0;
+    transition: none;
+  }
+  .about .about-box .text p {
+    width: 100%;
+    line-height: 1.2;
+  }
+  .about .about-box .text .btn {
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .showcase {
+    overflow: visible;
+  }
+  .showcase .video-container {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+  .showcase video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .showcase .overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+  }
+  .showcase .reservation-box {
+    position: absolute;
+    top: 65%;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    padding: 20px 50px;
+    text-align: center;
+    background-color: #eee;
+    z-index: 50000;
+  }
+  .offers {
+    margin-top: 300px;
+  }
+  .offers .rooms img {
+    width: 300px;
+    transition: all 0.3s;
+  }
+  .upper-footer {
+    height: 550px;
+  }
+  .upper-footer .border-col {
+    border-left: none;
+    border-bottom: 1px solid #fff;
+  }
+}
